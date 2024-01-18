@@ -13,16 +13,10 @@ const Feedback = () => {
   bad: 0,
  })
 
- console.log(Object.keys(options)); 
-
  const {good, neutral, bad} = options;
-
- console.log(options);
  
  const countTotalFeedback = () => {
-  const total = good + neutral + bad;
-  console.log(total);
-  return total;
+  return good + neutral + bad;
  }
 
  const countPositiveFeedbackPercentage = (keyName) => {
